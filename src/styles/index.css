@@ -1,15 +1,21 @@
-
 /* Michael Panica Start of CSS Modifications */
-/***** Navbar - Michael Panica *****/ 
+/***** Navbar - Michael Panica *****/
 
-.nav-link, .navbar-brand{
-  font-family: "Inter", sans-serif !important; 
+/* Sticky Nav - Step */
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link,
+.navbar-brand {
+  font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 450 !important;
   font-size: 20px !important;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
 .nav-link {
   color: #000;
@@ -40,9 +46,9 @@
   margin: auto 12px !important;
 }
 
- /***** End Navbar - Michael Panica *****/
- /***** Hero Section - Michael Panica *****/  
- 
+/***** End Navbar - Michael Panica *****/
+/***** Hero Section - Michael Panica *****/
+
 .hcf-bp-center {
   background-position: center !important;
 }
@@ -80,13 +86,12 @@
   transition: all 0.5s;
 }
 /***** End Hero Section - Michael Panica *****/
-/***** Buttons Animation and customisation - Michael Panica *****/ 
+/***** Buttons Animation and customisation - Michael Panica *****/
 
 .colored-button {
   color: white !important;
   background-color: #ed4e3c !important;
   transition: transform 1s !important;
-  
 }
 
 .colored-button:hover {
@@ -110,8 +115,7 @@
   transition: 400ms ease-in-out !important;
   transform: scale(1.2);
 }
- /***** End Buttons Animation and customisation - Michael Panica *****/
-
+/***** End Buttons Animation and customisation - Michael Panica *****/
 
 .cst-carousel {
   height: 320px;
@@ -133,7 +137,7 @@
 
 .cst-carousel__card {
   background-color: #fff;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   height: 100%;
   padding: 3.5rem;
   position: relative;
@@ -165,7 +169,7 @@
 
 .cst-testimony__client {
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   display: flex;
 }
 
@@ -181,7 +185,6 @@
   font-size: 2vh;
 }
 @media screen and (min-width: 768px) {
-  
   .testimonial {
     display: flex;
   }
@@ -199,7 +202,7 @@
   }
 }
 
-/***** Cards Section - Michael Panica *****/ 
+/***** Cards Section - Michael Panica *****/
 
 #contributors {
   margin-top: 0 !important;
@@ -217,7 +220,7 @@
   font-size: 1vh !important;
   justify-content: center !important;
 }
-.card {
+#contributors .card {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
   transition: transform 1s !important;
   border: none;
@@ -225,6 +228,7 @@
   margin-bottom: 5vh;
   margin-left: 2vh;
   margin-right: 2vh;
+  height: 100%;
 }
 .card:hover {
   transform: scale(1.05);
@@ -232,46 +236,62 @@
 }
 .card-img-top {
   object-fit: contain;
-  max-height: 45vh;;
+  max-height: 45vh;
   width: 100%;
   height: auto;
 }
- /***** End Cards Section - Michael Panica *****/
-/***** Cards Websites and links - Michael Panica *****/ 
-.github{
-  margin-right: .25vw;
-  margin-top: .5vh;
-  padding: .8vh .35vw;
+.services-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px !important;
+  border-radius: 20px;
+}
+.services-title {
+  font-family: "Inter", sans-serif !important;
+  padding-left: 3vw;
+  display: inline-block;
+  text-transform: capitalize; 
+}
+.services-images {
+    width:  auto;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+/***** End Cards Section - Michael Panica *****/
+/***** Cards Websites and links - Michael Panica *****/
+.github {
+  margin-right: 0.25vw;
+  margin-top: 0.5vh;
+  padding: 0.8vh 0.35vw;
   color: white;
-  background-color: #2b3137; 
+  background-color: #2b3137;
   transition: transform 1s !important;
 }
 .github:hover {
   color: rgb(221, 221, 221);
   background-color: #24292e;
-  transition: 400ms ease-in-out !important
+  transition: 400ms ease-in-out !important;
 }
-.linkedin{
-  margin-right: .25vw;
-  margin-top: .5vh;
-  padding: .8vh .35vw;
+.linkedin {
+  margin-right: 0.25vw;
+  margin-top: 0.5vh;
+  padding: 0.8vh 0.35vw;
   color: white;
-  background-color: #00a0dc; 
+  background-color: #00a0dc;
   transition: transform 1s !important;
 }
 
-.linkedin:hover{
+.linkedin:hover {
   color: rgb(221, 221, 221);
   background-color: #0077b5;
   transition: 400ms ease-in-out !important;
 }
 
 .website {
-  margin-right: .25vw;
-  margin-top: .5vh;
-  padding: .8vh .35vw;
+  margin-right: 0.25vw;
+  margin-top: 0.5vh;
+  padding: 0.8vh 0.35vw;
   color: white;
-  background-color: #E36414; 
+  background-color: #e36414;
   transition: transform 1s !important;
 }
 .website:hover {
@@ -280,11 +300,11 @@
   transition: 400ms ease-in-out !important;
 }
 .behance {
-  margin-right: .25vw;
-  margin-top: .5vh;
-  padding: .8vh .35vw;
+  margin-right: 0.25vw;
+  margin-top: 0.5vh;
+  padding: 0.8vh 0.35vw;
   color: white;
-  background-color: #0067ff; 
+  background-color: #0067ff;
   transition: transform 1s !important;
 }
 .behance:hover {
@@ -292,31 +312,166 @@
   background-color: #004bbb;
   transition: 400ms ease-in-out !important;
 }
- /***** End Cards Websites and links - Michael Panica *****/
- /***** FontAwesome Icons Customisation *****/ 
- 
+/***** End Cards Websites and links - Michael Panica *****/
+/***** FontAwesome Icons Customisation *****/
+
 .fa-html5 {
   color: #e34c26 !important;
 }
 .fa-css3-alt {
-  color: #264de4 ;
+  color: #264de4;
 }
 
 .fa-js {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 .fa-bootstrap {
   color: #805ab9;
 }
 .fa-git {
-  color: #F1502F;
+  color: #f1502f;
 }
 .fa-ubuntu {
-  color: #E95420;
+  color: #e95420;
 }
 .fa-behance {
   color: #131418;
 }
- /***** End FontAwesome Icons Customisation *****/
+/***** End FontAwesome Icons Customisation *****/
 
+/* Service Section by @eishha */
+
+:root {
+  --font-family: "Inter", sans-serif;
+}
+
+.services {
+  font-family: var(--font-family);
+  display: flex;
+  flex-flow: column;
+  padding: 56px 72px;
+  gap: 24px;
+  color: rgba(41, 41, 41, 1);
+}
+
+.services h1 {
+  font-weight: 800;
+  font-family: inherit;
+  color: black;
+  margin-left: 0.67em;
+}
+
+.service-row-1 {
+  display: flex;
+  height: 40%;
+  flex-flow: row;
+  gap: 16px;
+  padding: 20px 24px;
+}
+
+.service-row-2 {
+  display: flex;
+  flex-flow: row;
+  gap: 28px;
+  padding: 20px 24px;
+}
+
+.service-card {
+  display: flex;
+  flex-flow: column;
+  padding: 0px 0px 24px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.service-row-1 .service-card {
+  width: 420px;
+  height: 472px;
+}
+
+.service-row-2 .service-card {
+  height: 520px;
+  width: 634px;
+}
+
+.service-card-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.service-card button {
+  background: rgba(237, 78, 60, 1);
+  color: #ffff;
+  width: 107px;
+  height: 43px;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
+  opacity: 0px;
+}
+
+.service-card-content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 16px 16px;
+  gap: 16px;
+}
+
+#service-card-h2 {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+#service-card-p {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+@media screen and (max-width: 786px) {
+  .services {
+    padding: 56px 16px;
+  }
+  .service-row-1,
+  .service-row-2 {
+    flex-flow: column;
+  }
+
+  .service-row-2 .service-card {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .services {
+    width: 100vw;
+    padding: 0 1rem;
+    margin: 3.5rem 0;
+  }
+
+  .service-row-1,
+  .service-row-2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .service-card {
+    width: 100% !important;
+    height: fit-content !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Service Section by @eishha */
