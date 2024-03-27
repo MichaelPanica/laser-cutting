@@ -236,6 +236,22 @@
   width: 100%;
   height: auto;
 }
+.services-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px !important;
+  border-radius: 20px;
+}
+.services-title {
+  font-family: "Inter", sans-serif !important;
+  padding-left: 3vw;
+  display: inline-block;
+  text-transform: capitalize; 
+}
+.services-images {
+    width:  auto;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
  /***** End Cards Section - Michael Panica *****/
 /***** Cards Websites and links - Michael Panica *****/ 
 .github{
