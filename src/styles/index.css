@@ -1,6 +1,7 @@
 /* Michael Panica Start of CSS Modifications */
 /***** Navbar - Michael Panica *****/
 
+<<<<<<< HEAD
 /* Sticky Nav - Step */
 .navbar {
   position: sticky !important;
@@ -11,6 +12,10 @@
 .nav-link,
 .navbar-brand {
   font-family: "Inter", sans-serif !important;
+=======
+.nav-link, .navbar-brand{
+  font-family: "Inter", sans-serif !important; 
+>>>>>>> parent of 20d8d70 (Added Sticky Navbar)
   font-optical-sizing: auto;
   font-weight: 450 !important;
   font-size: 20px !important;
